@@ -3,6 +3,6 @@ Write a SQL query to get emp id and department for each department who recently 
 
 
 
-SELECT user_id, date, post_count,
-       ROUND(AVG(post_count) OVER (PARTITION BY user_id ORDER BY date ROWS BETWEEN 2 PRECEDING AND CURRENT ROW), 2) AS rolling_average
-FROM user_posts;
+SELECT emp_id, first_name, last_name, date_of_join, date_of_exit, department
+FROM employees
+WHERE date_of_join > '2023-01-01' AND (date_of_exit IS NULL OR date_of_exit > CURRENT_DATE);
