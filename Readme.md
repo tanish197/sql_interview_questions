@@ -1,3 +1,6 @@
+# SQL INTERVIEW QUESTIONS
+
+
 1.      Write a SQL query to find the second highest salary from the table emp. (Column name – id, salary)
 
 2.      Write a SQL query to find the numbers which consecutively occurs 3 times. (Column name – id, numbers)
